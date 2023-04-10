@@ -94,6 +94,21 @@ footer
     margin-top: 240px;
     opacity: 0.8;
 }
+.profile
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  text-decoration:azure;
+}
+.img
+{
+    border-radius: 50%;
+    
+
+}
 
     </style>
 </head>
@@ -105,21 +120,23 @@ footer
               <nav>
                  <ul>
                  <li> <a href="index.html"> Home </a> </li>
-                 <li> <a href="about.html">Aabout </a> </li>
+                 <li> <a href="about.html">Aabout us</a> </li>
                  </ul>
               </nav>
     </header>
 
     <main>
-        <section>
-            <h2>my Information</h2>
-            <h3>My name is Bayan, I am a Java Script trinee</h3>
-            <img src="./pexels-pixabay-36753.jpg" alt="" height="25%" width="40%" >
+        <div class="profile">
+         <section>
+            <h2>Bayan Hamdeh</h2>
+            <h3>I am Bayan,I am a Java Script trinee</h3>
+            <img src="./istockphoto.jpg" alt="" height="200px" width="200px" class="img" >
           </section>
           
           <section>
             <form action="" method="post" target="_self">
-                <h3>Please fill in this form</h3><br> 
+                <h3>if you want to contact me Please fill in this form</h3>
+                <h3>I will contact you as possible as soon</h3><br>
                  Name <br> <input type="text" name="name" required placeholder="Enter Name"> <br> <br>
                  Email <br> <input type="email" name="email" required placeholder="Enter Email"> <br> <br>
                  Your Message <br><input type="text"  name=" Message" id="" required placeholder="Your Message"> <br><br>
@@ -127,17 +144,20 @@ footer
 
             </form>
           </section>
+        </div>
     </main>
+
+    <footer class="footer">
+        <div>
+        contact Information: <br>
+        <i class="fa-solid fa-envelope"></i> 
+        Email: ToDo@hotmail.com<br>
+        <i class="fa-solid fa-phone"></i>
+        Phone Number: 079999999 <br>
+        &copy;2023 copyright
+        </div>
+    </footer>
 </body>
 
-<footer class="footer">
-    <div>
-    contact Information: <br>
-    <i class="fa-solid fa-envelope"></i> 
-    Email: ToDo@hotmail.com<br>
-    <i class="fa-solid fa-phone"></i>
-    Phone Number: 079999999 <br>
-    &copy;2023 copyright
-    </div>
-</footer>
+
 </html>
