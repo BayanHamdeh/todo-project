@@ -16,15 +16,15 @@ if(age <= 0)
 {
     alert('age shoud not be less than or equal to 0')
 }
-confirm('skip the welcoming message?');
-// skip = confirm('skip the welcoming message?');
-// if (skip == true)
-// {
-    
-// }
-
-
-if(gender == 'female')
+// confirm('skip the welcoming message?');
+skip = confirm('skip the welcoming message?');
+if (skip == true)
+{
+    console.log(skip)
+}
+else
+{
+    if(gender == 'female')
 {
     confirm("welcome Ms " + name);
 }
@@ -45,4 +45,5 @@ else
 
     }
     
+}
 }
