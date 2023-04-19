@@ -30,6 +30,7 @@ else
 }
 
 let skip = confirm('skip the welcoming message?');
+
 if (skip == true)
 {
     console.log(skip)
