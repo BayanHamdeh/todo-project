@@ -58,6 +58,7 @@ else {
 }
 
 
+
 let inq = prompt('Do you like the new virsion ');
 if (inq ==='') {
     inq = 'Invalid1';
