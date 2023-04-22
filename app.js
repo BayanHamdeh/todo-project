@@ -29,7 +29,7 @@ let skip = confirm('skip the welcoming message?');
 
 if (skip == true)
 {
-    console.log(skip)
+    skip = true;
 }
 else {
     if (gender == 'female') {
@@ -57,43 +57,32 @@ else {
     }
 }
 
-let inquiries = confirm("do you have any inquiries?");
-let inq = prompt('you can to put your inquiries here');
 
-if (inquiries == true) {
-    userAnswer.push(inq);
-
+let inq = prompt('Do you like the new virsion ');
+if (inq ==='') {
+    inq = 'Invalid';
 }
+userAnswer.push(inq);
 
-function ifEmpty(n1) {
-    if (n1 == null) {
-        console.log("invalid string");
-    }
-}
-ifEmpty(inq);
-
-let like = confirm("do you have any suggistion?");
 let sug = prompt('you can to put your suggistion here');
-
-if (like == true) {
-    userAnswer.push(sug);
+if (sug ==='') {
+    sug = 'Invalid';
 }
-// function ifEmpty2(n1) {
-//     if (n1 == null) {
-//         console.log("invalid string");
-//     }
-//}
-ifEmpty(sug);
+userAnswer.push(sug);
+
+let std = prompt('are you studying');
+if (std ==='') {
+    std='Invalid';
+}
+userAnswer.push(std);
+
+
+
 
 function Traverse(arr) {
     for (let i = 0; i < userAnswer.length; i++) {
         console.log(arr[i]);
 
-        // return arr[i];
     }
 }
 Traverse(userAnswer);
-// for (let i = 0; i < userAnswer.length; i++) {
-//     console.log(userAnswer[i]); 
-// }
-//hello 
