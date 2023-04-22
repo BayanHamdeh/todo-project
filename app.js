@@ -58,21 +58,22 @@ else {
 }
 
 
+
 let inq = prompt('Do you like the new virsion ');
 if (inq ==='') {
-    inq = 'Invalid';
+    inq = 'Invalid1';
 }
 userAnswer.push(inq);
 
-let sug = prompt('you can to put your suggistion here');
+let sug = prompt('Do you have any suggistion ');
 if (sug ==='') {
-    sug = 'Invalid';
+    sug = 'Invalid2';
 }
 userAnswer.push(sug);
 
 let std = prompt('are you studying');
 if (std ==='') {
-    std='Invalid';
+    std='Invalid3';
 }
 userAnswer.push(std);
 
